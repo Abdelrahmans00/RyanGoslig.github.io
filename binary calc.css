@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Container{
+    width: 100%;
+    height: 100vh;
+    background: rgb(74, 74, 75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.calculator{
+    background: #3a4452;
+    padding: 20px;
+    border-radius: 10px;
+}
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 190px;
+    height: 100px;
+    border-radius: 10 px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255,0.1),5px 5px 5px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+
+    
+}
+form .box{
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45%;
+    width: 45%;
+    margin: 40px;
+    height: 45px;
+    border-radius: 3px;
+    border: 1px solid #333;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+}
+
+
+
+form .Display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+    justify-content: center;
+    
+   
+}
+form .Display input{
+    text-align: center;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+    
+}
+
+form input.equal{
+    width: 145px;
+}
+
+
+form input.operator{
+    color: #33ffd8;
+}
+
+.logo{
+    color: black;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+    float: left;
+}
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+
+}
+
+.ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: orange;
+
+}
+
+

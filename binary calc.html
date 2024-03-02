@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <link rel="stylesheet" href="binary calc.css">
+        <title>
+            Convert from decimal to binary
+        </title>
+    </head>
+    <body>
+        <div class="Container">
+            <div class="calculator">
+                    
+                <h1>
+                    Convert from decimal to binary 
+                </h1>
+                    <form>
+                        <div class="Display">
+                        <input type="text" name="display">
+                            <div class="box">
+                                <input id="decimal_input" type="number" placeholder="Decimal">
+                                <input id="binary_input"  disabled type ="number" placeholder="Binary">
+                            </div>
+                        </div>
+                    </form>
+                    <script>
+                        let decimal_input = document.getElementById('decimal_input');
+                        let binary_input = document.getElementById('binary_input');
+
+                        function convert_to_binary(){
+                            let decimal = parseInt(decimal_input.value);
+                            let binary_version = decimal.toString(2)
+
+                            binary_input.value = binary_version
+                        }
+                        decimal_input.addEventListener('input',convert_to_binary)
+                    </script>
+                    <div class="menu">
+                    
+                        <ul> 
+                            <div class="ul"></div>
+                            
+                                
+                                <li><a href="https://abdelrahmans00.github.io/">Simple Calculator </a></li>
+                                <li><a href="#">Age Calculator </a></li>
+                                <li><a href="#">Calories Calculator </a></li>
+                            
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
